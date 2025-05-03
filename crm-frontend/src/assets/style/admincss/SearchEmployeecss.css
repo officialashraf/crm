@@ -1,0 +1,98 @@
+#input{
+    background-color: #d9d9d9;
+    border: 2px solid #d9d9d9;
+    margin-top: 20px;
+    background-color: #d9d9d9 !important;
+    /* box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.5); */
+    border-radius: 10px;
+    padding: 10px 0px 10px 5px;
+    /* width: max-content; */
+}
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* align-items: center; */
+    justify-content: flex-start;
+
+}
+.cards{
+    background-color: #d9d9d9 !important;
+    /* box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.5); */
+    border-radius: 10px;
+    width: 22%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    /* width: calc(33.33% - 20px) */
+}
+.cardbody{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.EmployeeImage{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    
+    
+}
+@media (max-width: 576px) {
+   
+        .cards{
+            background-color: #d9d9d9 !important;
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            font-weight: 550;
+        }
+        .card-box{
+            flex-direction: column;
+            gap: 20px;
+            overflow-x: auto;
+       
+    }
+}
+.emp-btns{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-emp{
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    border: none;
+}
+.btn-emp:hover{
+    background-color: transparent; 
+    color: rgb(77, 74, 74);
+    
+}
+.img-pics{
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    border: 2px solid black;
+
+    
+    
+}

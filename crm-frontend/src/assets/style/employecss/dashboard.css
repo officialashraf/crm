@@ -1,0 +1,301 @@
+
+.profilename{
+
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.profile{
+    width: max-content;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+p{
+  display: inline;
+}
+
+.boxs{
+  display: flex;
+  gap: 40px;
+  margin: 10px;
+
+  justify-content: center;
+}
+.box{
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+position: relative;
+left:  100px;
+
+  text-align: center;
+
+  height: fit-content;
+  padding:0px 10px 5px 10px;
+  background-color: #f1f1f1;
+
+  display:inline;
+  word-spacing: 0.1em;   
+  line-height: 1.5;  
+}
+b{
+  padding-right: 5px;
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+
+}
+p{
+  font-size: 15px;
+  
+}
+
+
+.navbar-collapse {
+  background-color:rgb(255, 255, 255) !important; /* Dark background */
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  /* z-index: -1; */
+  /* height: 49px !important; */
+}
+
+
+
+.navbar-main{
+  /* background-color: #ccc; */
+  /* padding: 10px 20px; */
+}
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.pagination-container {
+  /* display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 10px; */
+  
+  position: relative;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Search Form */
+.search-form {
+  /* display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+margin-left:  10px; */
+
+width: 200px;
+margin-right: 15px;
+   
+}
+
+.search-input {
+  /* padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+
+.icon-group {
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+
+}
+
+.nav-icon {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  color: black;
+}
+.nav-icon:hover {
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    /* background: #333; */
+    z-index: 1050;
+    padding: 10px;
+  }
+  
+  .navbar-title{
+    font-size: 18px;
+  }
+  .pagination-container {
+    display: block;
+    text-align: center;
+
+    /* justify-content: center; */
+    /* width: 100%; */
+  }
+
+  .search-form{
+    width: 100%;
+  }
+  /* .search-input {
+    width: 100%;
+  } */
+
+  .icon-group {
+    justify-content: center;
+    /* margin-top: 10px; */
+    width: 100%;
+  }
+}
+
+
+#navbartB {
+
+  padding: 0;
+  margin: 0;
+height: min-content;
+  /* background-color: #ccc; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* min-height: 20px; */
+  width: 100%;
+
+  /* width: 100%; */
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+
+  font-weight: bold;
+}
+
+
+/* ==== Main Wrapper ==== */
+.dashboard {
+  display: grid;
+  grid-template-rows: 60px auto;
+  height: 100vh;
+  gap: 10px;
+}
+
+.navbarTable{
+  /* width: 100vw; */
+  /* background-color: #ccc; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* padding: 0 20; */
+}
+
+.tableresponsive {
+  /* background: #f5f5f5; */
+  overflow-y: auto; 
+  overflow-x: auto; 
+  overflow: auto; 
+  /* top: 20px; */
+  /* position: relative; */
+  /* padding: 20px; */
+  /* max-height: calc(100vh - 120px);  */
+  /* height: 100vh; */
+
+}
+
+/* ==== Fixed Table Header ==== */
+.custom-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+
+  /* width: 2000px;  */
+  /* border-collapse: collapse; */
+}
+
+.custom-table thead {
+  position: sticky;
+  /* top: 0px; */
+  /* background: white; */
+  z-index: 999;
+  /* padding: 0; */
+  border-bottom: none !important;
+  /* margin: 0; */
+  /* padding: 0; */
+  border: none;
+  /* top: 0; */
+}
+thead{
+  color: black;
+  font-weight: bold;
+  top: 10px;
+}
+
+/* this is my th  */
+.custom-table thead tr #th{
+
+
+  width: 170px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Show '...' when text overflows */
+  white-space: nowrap; /* Prevent line breaks */
+  background-color: #D9D9D9;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+}
+
+/* this is my td  */
+.custom-table tbody tr .tds{
+
+  width: 170px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Show '...' when text overflows */
+  white-space: nowrap; /* Prevent line breaks */
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+ 
+}
+
+
+/* ==== Floating Button ==== */
+#dashboardFloatingButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* #dashboardFloatingButton {
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+} */

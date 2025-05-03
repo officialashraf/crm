@@ -1,0 +1,127 @@
+#inputfield{
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    /* mask-border-outset: 2px solid black; */
+    /* box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.6); */
+  
+   
+}
+     #th{
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        
+        text-align: center;
+    }
+    /* #thead{
+        border: 2px solid black;
+    
+      
+    }
+    tbody{
+        background-color: transparent;
+     
+    }
+    td{
+        border: 2px solid black;
+      
+
+    } */
+
+    /* .border-vertical-only th,  */
+    .border-vertical-only td {
+        border-right: 1px solid #000;
+
+    }
+
+    /* .border-vertical-only th:first-child,  */
+    .border-vertical-only td:first-child {
+        border-left: none;
+    }
+
+    /* .border-vertical-only th:last-child,  */
+    .border-vertical-only td:last-child {
+        border-right: none;
+    }
+
+    /* Ensure the table is responsive */
+    @media (max-width: 576px) {
+        .border-vertical-only {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+    
+    }
+    .btn-action{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+border-left: none;
+        /* border-radius: 10px;
+        box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.6);
+       */
+    }
+    .btn-action a{
+        color: black;
+        
+        font-weight: bold; 
+    }
+  
+    .btns{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: end;
+    }
+    .btn1{
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px 30px 10px 30px;
+        margin-left: 10px;
+
+    }
+    Table{
+        /* border: 3px solid black;
+        border-radius: 10px;
+        box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.6);
+       */
+
+    }
+    .btn1:hover{
+        background-color: white;
+        color: black;
+
+    }
+    h1{
+        display: inline;
+    }
+    .leads{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+ 
+   #bulkupload{
+    position: absolute;
+    width: 100px;
+    opacity: 0;
+    cursor: pointer;
+   }
+
+   .nav-btns{
+    display: flex;
+    float: right;
+    width: 40%;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    margin-bottom: 10px;
+   }
+   .upload-excels{
+    width: fit-content;
+   }

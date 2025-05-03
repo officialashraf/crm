@@ -1,0 +1,40 @@
+#quotationId{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    width:100%;
+    height: fit-content;
+    margin-top: 40px;
+}
+.funnalChart{
+width: 60%;
+}
+.QuotationGraph{
+    width: 40%;
+    font-size: 20px;
+}
+@media (max-width: 576px) {
+    #quotationId {
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        margin-top: 60px;
+       
+    }
+
+    .funnalChart {
+        width: 150%; /* Ensure pie chart is responsive */
+        margin: 0 auto; /* Center the pie chart */
+    }
+
+    
+    .QuotationGraph {
+        font-size: 4vw; /* Adjust font size dynamically */
+        width: fit-content;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+}

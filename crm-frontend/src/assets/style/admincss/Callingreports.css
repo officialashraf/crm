@@ -1,0 +1,56 @@
+#callingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    /* background-color: aqua; */
+    width:100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.pieChartReport{
+    font-size: 20px;
+    width: 50%;
+}
+.pieChart{
+    width: 50%;
+   
+
+}
+@media (max-width: 576px) {
+    #callingContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .pieChart {
+        width: fit-content; /* Ensure pie chart is responsive */
+        margin: 0 auto; 
+        padding-left: 0;
+    }
+    
+    .pieChartReport {
+        font-size: 4vw; /* Adjust font size dynamically */
+        width: fit-content;
+        padding: 10px;
+        text-align: center; /* Center the text inside the report */
+        margin-top: 0;
+    }
+ 
+}
+.tableStyle{
+    width: max-content;
+    height: 100px;
+    /* background-color: rebeccapurple; */
+    /* padding: 20px; */
+}
+.tableStyle td{
+    /* width: max-content; */
+    /* background-color: rebeccapurple; */
+    padding-right: 10px;
+}
+.pieDate{
+    width: 10%;
+    height: 10%;
+}

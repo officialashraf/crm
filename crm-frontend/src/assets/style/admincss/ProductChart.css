@@ -1,0 +1,50 @@
+#ProductChart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    /* background-color:rebeccapurple; */
+    width:100%;
+    
+    height: fit-content;
+    margin-top: 20px;
+}
+.barChart{
+    width: 50%;
+}
+
+.QuotationChart{
+    font-size: 20px;
+    width: 50%;
+}
+@media (max-width: 576px) {
+    #ProductChart {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .barChart {
+        width: min-content; /* Ensure pie chart is responsive */
+        margin: 0 auto; /* Center the pie chart */
+    }
+    
+    .QuotationChart {
+        font-size: 4vw; /* Adjust font size dynamically */
+        width: fit-content;
+        padding: 10px;
+        text-align: center; /* Center the text inside the report */
+    }
+}
+.styleTable{
+    width: max-content;
+    height: 100px;
+    background-color: rebeccapurple;
+    /* padding: 20px; */
+}
+.styleTable td{
+    width: max-content;
+    background-color: rebeccapurple;
+    padding-right: 10px;
+}

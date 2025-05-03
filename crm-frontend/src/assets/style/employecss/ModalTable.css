@@ -1,0 +1,51 @@
+.XLgModalTable {
+  cursor: pointer;
+  float: right;
+}
+/* .table-responsive {
+  max-height: 400px;
+} */
+#searchbar {
+  /* box-shadow: none; */
+  padding: 10px;
+  margin-right: 25px;
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.0em;
+  
+  /* box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4); */
+}
+#datesearch {
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  text-align: center;
+  justify-items: center;
+}
+#td-style {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (max-width: 776px) {
+  #searchbar {
+    /* padding: 10px; */
+    /* height: 50px; */
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    /* font-size: 1.5em; */
+    /* box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
+  }
+}
+
+.tableResponsive{
+  max-height: 300px;
+  overflow-y:auto;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+}

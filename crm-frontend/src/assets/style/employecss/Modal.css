@@ -1,0 +1,17 @@
+#formId{
+    max-width: 500px;
+    max-height: fit-content;
+}
+#buttonId{
+    width: 100%;
+    margin-top: 20px;
+}
+#popoverId{
+    height: auto;
+    max-width: fit-content;
+    position:fixed;
+}
+#XlgId{
+    cursor: pointer;
+    float: right;
+}

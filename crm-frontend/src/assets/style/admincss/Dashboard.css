@@ -1,0 +1,50 @@
+#HomePage{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px; 
+    padding: 0px; 
+  /* height: 1200px; */
+  height: 100vh;
+  width: 100%;
+  /* position: sticky; */
+  
+}
+.manageleads{
+    width: auto;
+    
+    flex: 1;
+    height: 100%;
+    /* background-color: black; */
+    overflow-y: auto;
+
+}
+.navlinks{
+   
+
+     width: 250px; /* Fixed width for the sidebar */
+     height: 100%;
+     background-color: #333; /* Example background color */
+     color: white;
+     overflow-y: auto;
+     transition: width 0.3s ease;
+
+}
+@media (max-width: 576px) {
+    #HomePage{
+        display: block;
+        overflow-x: auto;
+        font-size: x-small;
+        height: 100%;
+
+    }
+    .manageleads{
+        display: block;
+        overflow-x: auto;
+        font-size: x-small;
+        height: 100%;
+    }
+    .navlinks{
+        width: 100%;
+        background-color: #d9d9d9;
+    }
+}
