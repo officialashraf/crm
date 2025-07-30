@@ -19,7 +19,7 @@ const Login = () => {
       return;
     }
     try {
-      await axios.post("http://localhost:5000/login/sendotp", { number });
+      await axios.post("/login/sendotp", { number });
       toast.success("otp send Successfully");
       setIsOtpSent(true);
     } catch (error) {
@@ -34,7 +34,7 @@ const Login = () => {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:5000/login/verify", {
+      const response = await axios.post("/login/verify", {
         number,
         otp,
       });
